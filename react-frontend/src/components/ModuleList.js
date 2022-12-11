@@ -1,21 +1,20 @@
-function Module() {
+function ModuleList() {
   const data = [{ id: 1, nom: 'med', description: 'gg' }];
-
   return (
     <div className="App">
       <table striped bordered hover>
         <tbody>
-          <TableRows data={data} />
+          <TableRows d={data} />
         </tbody>
       </table>
     </div>
   );
 }
 
-const TableRows = ({ data }) => {
+const TableRows = ({ d }) => {
   return (
     <>
-      {data.map((module, index) => {
+      {d.map((module, index) => {
         <tr key={index}>
           <td>{module.id}</td>
           <td>{module.nom}</td>
@@ -26,4 +25,4 @@ const TableRows = ({ data }) => {
   );
 };
 
-export default Module;
+export default ModuleList;
