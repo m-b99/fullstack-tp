@@ -1,11 +1,6 @@
-import { useFetch } from "../hooks/useFetch";
-
 function Module() {
-    
-    
-    return (
-        <></>
-    ) ;
+  const data = [{ id: 1, nom: 'med', description: 'gg' }];
+  return <></>;
 }
 
-export default Module ;
+export default Module;
