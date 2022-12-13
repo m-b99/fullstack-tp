@@ -16,7 +16,6 @@ function App() {
           <Col lg={12} style={{ marginTop: '20px' }}>
             <Routes>
               <Route exact path="/" element={<Bienvenue />}></Route>
-              <Route></Route>
               <Route exact path="/add" element={<Module />}></Route>
               <Route exact path="/list" element={<ModuleList />}></Route>
             </Routes>
