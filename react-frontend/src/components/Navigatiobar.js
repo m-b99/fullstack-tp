@@ -8,10 +8,14 @@ function Navigationbar() {
       <Link to={''} className="navbar-brand">
         <img src={cours} width="25" height="25" /> Ensias
       </Link>
-      <Link to={'add'} className="nav-link" style={{ margin: '20px' }}>
+      <Link
+        to={'add'}
+        className="nav-link"
+        style={{ margin: '20px', color: 'white' }}
+      >
         Ajouter un Module
       </Link>
-      <Link to={'list'} className="nav-link">
+      <Link to={'list'} className="nav-link" style={{ color: 'white' }}>
         Liste des Modules
       </Link>
     </Navbar>
