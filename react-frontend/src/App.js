@@ -17,6 +17,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Bienvenue />}></Route>
               <Route exact path="/add" element={<Module />}></Route>
+              <Route exact path="/add/:id" element={<Module />}></Route>
               <Route exact path="/list" element={<ModuleList />}></Route>
             </Routes>
           </Col>

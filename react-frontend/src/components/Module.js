@@ -4,6 +4,7 @@ import { Container, Form, FormGroup, Label, Input, Button } from 'reactstrap';
 
 function Module() {
   const initialForm = {
+    id: null,
     nom: '',
     description: '',
   };
@@ -11,12 +12,14 @@ function Module() {
   const [module, setModule] = useState(initialForm);
   const navigate = useNavigate();
   const { id } = useParams();
-
+  console.log(id);
   useEffect(() => {
     if (id !== 'new') {
       fetch(`/modules/${id}`)
         .then((resp) => resp.json())
-        .then((data) => setModule(data));
+        .then((data) => {
+          setModule(data);
+        });
     }
   }, [id, setModule]);
 

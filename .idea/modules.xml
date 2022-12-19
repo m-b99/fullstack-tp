@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/fullstack-tp.iml" filepath="$PROJECT_DIR$/.idea/fullstack-tp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-backend/spring-backend.iml" filepath="$PROJECT_DIR$/spring-backend/spring-backend.iml" />
     </modules>
   </component>
 </project>

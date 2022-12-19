@@ -24,7 +24,7 @@ const ModuleList = () => {
         'Content-Type': 'application/json',
       },
     }).then(() => {
-      let updatedData = [...data].filter((mo) => mo.id !== id);
+      let updatedData = data.filter((mo) => mo.id !== id);
       setData(updatedData);
     });
   };
@@ -35,7 +35,7 @@ const ModuleList = () => {
         {props.data.map((module) => {
           return (
             <tr key={module.index}>
-              <td style={{ whiteSpace: 'nowrap' }}>{module.id}</td>
+              <td>{module.id}</td>
               <td>{module.nom}</td>
               <td>{module.description}</td>
               <td>
@@ -44,7 +44,7 @@ const ModuleList = () => {
                     size="sm"
                     color="primary"
                     tag={Link}
-                    to={'/modules/' + module.id}
+                    to={'/add/' + module.id}
                   >
                     Edit
                   </Button>
@@ -92,13 +92,5 @@ const ModuleList = () => {
     </div>
   );
 };
-
-{
-  /* <table>
-        <tbody>
-          <TableRows data={data} />
-        </tbody>
-      </table> */
-}
 
 export default ModuleList;
